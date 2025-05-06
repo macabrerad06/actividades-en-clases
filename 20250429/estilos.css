@@ -1,0 +1,63 @@
+.grid-container{
+    display: grid; /* display grid es para crear una rejilla */
+    grid-template-rows: 1fr 1fr 1fr 1fr;    /* rows es filas */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* columns es columnas */
+    grid-gap: 5px; /* espacio entre filas y columnas */
+}
+
+.grid-item{
+    border: 1px solid #ff0000;    /* borde de 1px de color*/
+}
+
+.texto{
+    font-family: Georgia, 'Times New Roman', Times, serif, Times, serif ; /* tipo de letra */
+    font-size: 3rem; /* tamaño de letra */
+    font-weight: bold; /* negrita */
+}
+
+.texto1{
+    font-family: Arial, Helvetica, sans-serif; /* tipo de letra */
+    font-size: 48px; /* tamaño de letra */
+    font-weight: 900; /* negrita */
+}
+
+.img{
+    height: 250px;
+    width: 250px; /* tamaño de la imagen */
+}
+
+
+.boton{
+    background-color: #4CAF50; /* color de fondo */
+    border: none; /* sin borde */
+    color: white; /* color de letra */
+    padding: 15px 32px; /* espacio entre letras */
+    text-align: center; /* alineación del texto */
+    text-decoration: none; /* sin subrayado */
+    display: inline-block; /* bloque en línea */
+    font-size: 16px; /* tamaño de letra */
+    margin: 4px 2px; /* margen entre botones */
+    cursor: pointer; /* cursor de mano al pasar por encima */
+    width: 100%; /* ancho del botón */
+}
+
+
+.aceptar{
+    background-color: green; /* color de fondo */
+}
+
+
+.aceptar:hover{
+    background-color: greenyellow;
+    color: black; /* color de letra */
+}
+
+
+.peligro{
+    background-color: red; /* color de fondo */
+}
+
+.peligro:hover{
+    background-color: greenyellow;
+    color: black; /* color de letra */
+}

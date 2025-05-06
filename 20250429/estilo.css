@@ -1,0 +1,110 @@
+:root{
+    --primary: #2c3e50;
+    --card: rgb(123, 245, 245);
+    --accent: yellow;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.header-site,.footer-site{
+    width: 100%;
+    background: var(--primary);
+    color: aliceblue;
+    text-align: center;
+    padding: 1rem 0; 
+}
+
+.content-wrapper{
+    padding: 1rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;    
+    grid-template-areas: "sidebar evets details";
+    gap: 1.5rem;
+}
+
+.sidebar{
+    grid-area: sidebar; 
+    background-color: var(--card) ;
+    padding: 1rem;
+}
+
+.sidebar ul li{
+    list-style: none;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.sidebar ul li a:hover{
+    color: var(--accent);
+}
+
+.events{
+    border: 1px solid var(--primary);
+}
+
+.details{
+    grid-area: details;
+    background: var(--card);
+    padding: 1.5rem;
+    display: grid;
+    box-shadow: 0 2px 6px rgb(0, 0, 1);
+}
+
+.btn{
+    border: none;
+    color: red;
+}
+
+.comprar{
+    background-color: greenyellow;
+
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 1rem;
+}
+
+.card{
+    background-color: turquoise;
+    border: #2c3e50;
+    padding: 1rem;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card:hover{
+    transform: translateY(-40px);
+    box-shadow: #2c3e50 0px 0px 20px;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: "sidebar" "events" "details";
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8F0; /* fondo general */
+    color: #3E2723; /* texto general */
+}
+
+h1 {
+    color: #FFF8F0;
+    font-size: 50px;
+}
+
+.tagling {
+    font-size: 14px;
+    color: #FFF8F0;
+}
+
+#main-header {
+    background-color: #8B3A3A; /* terracota oscura */
+    text-align: center;
+    padding: 20px;
+}
+
+#navigator {
+    text-align: center;
+}
+
+.menu {
+    background-color: #A0522D; /* canela */
+    padding: 15px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #FFF8F0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #A0522D;
+    background-color: #FFE4C4; /* crema clara */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#platos-destacados {
+    border: 2px solid #DAA520; /* borde dorado */
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.destacado {
+    border: 2px solid #DAA520;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #FFF8F0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.especial {
+    background-color: #F5FFFA; /* suave menta */
+}
+
+.destacado:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.plato-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#reservas, #opiniones {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid #DAA520;
+    border-radius: 10px;
+}
+
+input, textarea {
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #A0522D;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #8B3A3A;
+    outline: none;
+}
+
+button {
+    background-color: #D2691E; /* terracota viva */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8B4513; /* marrón tostado */
+}
+
+#footer {
+    background-color: #2E1D13; /* marrón carbón */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

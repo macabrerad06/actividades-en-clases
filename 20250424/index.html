@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SABOR LOCAL</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>SABOR LOCAL</h1>
+        <p class="tagling">Sabor como en casa</p>
+    </header>
+
+    <nav id="navigator">
+        <ul class="menu">
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">MENÚ</a></li>
+            <li><a href="#">RESERVAS</a></li>
+            <li><a href="#">CONTACTOS</a></li>
+        </ul>
+    </nav>
+
+    <section id="platos-destacados">
+        <h2>Platos Destacados</h2>
+        <div class="destacado">
+            <h3>HORNADO</h3>
+            <img src="imagenes/hornado.jpg.jpeg " alt="Hornado" class="plato-img">
+            <p>Tradicional plato típico del sector, muy delicioso.</p>
+        </div>
+        <div class="destacado">
+            <h3>ENCEBOLLADO</h3>
+            <img src="imagenes/encebollado.jpg.jpeg" alt="Encebollado" class="plato-img">
+            <p>Delicioso plato ecuatoriano, manjar de los dioses.</p>
+        </div>
+        <div class="destacado especial">
+            <h3>MOTE CON CHICHARRÓN</h3>
+            <img src="imagenes/mote.jpg" alt="Mote con chicharrón" class="plato-img">
+            <p>Comida nutritiva para tener energías necesarias para el día.</p>
+        </div>
+    </section>
+
+    <form id="reservas">
+        <h3>Reservar</h3>
+        <label for="txtnombre">Nombre:</label>
+        <input type="text" id="txtnombre" required>
+        <label for="txtApellido">Apellido:</label>
+        <input type="text" id="txtApellido" required>
+        <label for="txttelefono">Teléfono:</label>
+        <input type="tel" id="txttelefono" required>
+        <label for="txtfecha">Fecha:</label>
+        <input type="date" id="txtfecha" required>
+
+        <button type="submit" class="btn-reservar">ACEPTAR</button>
+    </form>
+
+    <form id="opiniones">
+        <h3>Déjanos tu opinión</h3>
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" required>
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" rows="5" required></textarea>
+        <button type="submit" class="btn-opinion">ENVIAR COMENTARIO</button>
+    </form>
+
+    <footer id="footer">
+        <p>&copy; 2025 SABOR LOCAL | Todos los derechos reservados.</p>
+        <p>Contacto: saborlocal@email.com | Tel: 0999999999</p>
+    </footer>
+</body>
+</html>
